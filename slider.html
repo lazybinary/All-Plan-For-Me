@@ -67,12 +67,22 @@
       .swiper-slide-active .relative a {
         transition: all ease-in 0.4s;
       }
+      .slider-one-nav-btn {
+        position: absolute;
+        bottom: 25%;
+      }
+      .swiper-button-prev-1 {
+        rotate: 180deg;
+      }
+      .swiper-button-next-1 {
+        margin-top: 2x0px;
+      }
     </style>
   </head>
 
   <body>
     <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper pos-relative">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="h-350 mb-30 relative">
@@ -309,8 +319,22 @@
           </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="flex slider-one-nav-btn align-center justify-center gap-20">
+        <div class="swiper-button-prev-1">
+          <img
+            class="w-full"
+            src="./assestes/png/navigation-button.png"
+            alt="navi-arrow"
+          />
+        </div>
+        <div class="swiper-button-next-1">
+          <img
+            class="w-full"
+            src="./assestes/png/navigation-button.png"
+            alt="navi-arrow"
+          />
+        </div>
+      </div>
     </div>
 
     <!-- Swiper JS -->
@@ -328,8 +352,8 @@
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next-1",
+          prevEl: ".swiper-button-prev-1",
         },
         keyboard: {
           enabled: true,

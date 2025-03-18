@@ -130,10 +130,6 @@ body {
   display: none;
 }
 
-.swiper-two .navi-arrow {
-  width: 30px !important;
-  height: 24px;
-}
 .swiper-two .swiper-button-prev {
   rotate: 180deg;
 }
@@ -225,6 +221,21 @@ body {
 .slider-three .slide-content a:hover {
   background-color: #0056b3;
 }
+.slider-three-nav-btn {
+  gap: 20px !important;
+  justify-content: end;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+.slider-three-nav-btn .swiper-button-prev-2,
+.swiper-button-next-2 {
+  width: 42px;
+  height: 42px;
+}
+.slider-three-nav-btn .swiper-button-prev-2 {
+  rotate: 180deg !important;
+}
+
 /* slider 1 */
 .slider-one .swiper {
   width: 100%;
@@ -262,5 +273,8 @@ body {
 }
 .slider-one .swiper-slide-active .relative a {
   transition: all ease-in 0.4s;
+}
+.max-w-fit {
+  max-width: fit-content;
 }
 /* g */
