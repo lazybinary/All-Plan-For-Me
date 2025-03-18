@@ -16,19 +16,148 @@ body {
 .flex-col {
   flex-direction: column;
 }
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.pos-relative {
+  position: relative !important;
+}
 /* gap */
 .gap-50 {
   gap: 50px;
 }
+.gap-24 {
+  gap: 24px;
+}
+.gap-20 {
+  gap: 20px;
+}
 .gap-10 {
   gap: 10px;
+}
+.gap-4 {
+  gap: 4px;
 }
 /* text */
 .text-center {
   text-align: center;
 }
+.text-start {
+  text-align: start;
+}
+.fs-45 {
+  font-size: 45px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+/* leading */
+.lh-120 {
+  line-height: 120%;
+}
+.lh-170 {
+  line-height: 170%;
+}
+/* font weight */
+.f-500 {
+  font-weight: 500;
+}
+.f-300 {
+  font-weight: 300px;
+}
 /* padding */
 .px-20 {
   padding: 0px 20px;
 }
+.p-50-60 {
+  padding: 50px 60px;
+}
 /* margin */
+.m-0 {
+  margin: 0px;
+}
+.mx-auto {
+  margin: 0px auto;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.swiper-slide-active {
+  background-color: #0677ad;
+  color: white;
+  opacity: 1;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+  color: transparent;
+  width: 42px;
+  height: 42px;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.navi-arrow {
+  width: 30px !important;
+  height: 24px;
+}
+.swiper-button-prev {
+  rotate: 180deg;
+}
+.navigation-btn-gap {
+  gap: 30px;
+  margin-left: 13%;
+}
+/* width */
+.max-w-650 {
+  max-width: 650px;
+}
+.max-w-50 {
+  max-width: 50px;
+}
+.w-full {
+  width: 100%;
+}
+/* height */
+.max-h-300 {
+  max-height: 300px;
+}
+.max-w-123 {
+  max-width: 123px;
+}
+.max-h-50 {
+  max-height: 50px;
+}
