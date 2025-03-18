@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper Demo</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style2.css" />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slider-three .swiper-slide {
+        position: relative;
+
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height 0.3s ease;
+        height: 461px;
+      }
+
+      .slider-three .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        border-radius: 20px;
+      }
+
+      .slider-three .swiper-slide-active {
+        height: 240px;
+      }
+
+      .slider-three .swiper-a -next,
+      .swiper-a -prev {
+        z-index: 10;
+      }
+
+      .slider-three .swiper-pagination {
+        z-index: 10;
+      }
+
+      .slider-three .slide-content {
+        display: none;
+
+        margin-top: 20px;
+        position: absolute;
+        bottom: -120px;
+        width: 100%;
+        transition: bottom 0.3s ease;
+      }
+
+      .slider-three .swiper-slide-active .slide-content {
+        display: block;
+        position: absolute;
+        bottom: -220px;
+        left: 0px;
+      }
+
+      .slider-three .slide-content a {
+        padding: 15px 55px 15px 35px;
+        font-size: 16px;
+        background-color: #0677ad;
+        color: white;
+        background-size: cover;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      .slider-three .slide-content a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="my-80 slider-three">
+      <h1 class="max-w-622 mb-50 fs-45 mx-auto ff-haton text-center">
+        Beautifully Designed Plans for Every Home.
+      </h1>
+
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome2.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome3.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome2.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assestes/png/everyhome3.png" alt="Home Image" />
+            <div class="slide-content">
+              <h1 class="fs-28 ff-haton text-black text-start">
+                Flexible Designs for Every Lifestyle.
+              </h1>
+              <p class="fs-14 text-black text-start">
+                The House Designers offers professional modification services to
+                make changes to home.
+              </p>
+              <a
+                href="#"
+                class="t-none max-w-fit fs-16 block flex item-center relative"
+              >
+                <span>Get The Details</span>
+                <span class="absolute top-5"
+                  ><svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.4506 15.5867C18.3387 15.6987 18.1855 15.7694 18.0087 15.7694C17.6669 15.7694 17.3841 15.4865 17.3841 15.1448L17.3841 8.61582L10.8551 8.61582C10.5134 8.61582 10.2305 8.33298 10.2305 7.99121C10.2305 7.64944 10.5134 7.3666 10.8551 7.3666L18.0087 7.3666C18.3505 7.3666 18.6333 7.64944 18.6333 7.99121L18.6333 15.1448C18.6333 15.3216 18.5626 15.4748 18.4506 15.5867Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M18.3504 8.53307L8.43319 18.4502C8.19159 18.6918 7.7909 18.6918 7.5493 18.4502C7.30771 18.2086 7.30771 17.808 7.5493 17.5664L17.4665 7.64919C17.7081 7.40759 18.1088 7.40759 18.3504 7.64919C18.592 7.89078 18.592 8.29147 18.3504 8.53307Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="swiper-button-next absolute position-right"></div>
+        <div class="swiper-button-prev position-left"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          500: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

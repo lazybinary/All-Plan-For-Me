@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style/style2.css" />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: height 0.3s ease;
+      }
+      .swiper-slide-active img {
+        height: 478px;
+      }
+      .swiper-slide p span {
+        display: none;
+      }
+      .swiper-slide-active p span {
+        display: flex;
+      }
+      .swiper-slide .relative .pos-square {
+        display: none;
+      }
+      .swiper-slide-active .relative .pos-square {
+        display: block;
+      }
+      .swiper-slide .relative a {
+        display: none;
+      }
+      .swiper-slide-active:hover .relative a {
+        display: block;
+      }
+      .swiper-slide-active .relative a {
+        transition: all ease-in 0.4s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-1.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-2.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-3.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-1.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-2.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-350 mb-30 relative">
+            <img width="100%" src="./assestes/png/inspire-3.png" alt="img" />
+            <p class="bg-white absolute z-1 pos-square">Sq.ft - 1,479 FT2</p>
+            <a href="#" class="bg-blue p-det absolute t-none z-1">Details</a>
+            <div class="flex gap-10 j-bet mt-30 item-center">
+              <div class=" ">
+                <h3 class="fs-22 m-0 ff-haton">Griya Asri Tamansari</h3>
+                <p class="flex gap-10 mt-12 item-center">
+                  <span
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 11.8084C8.22502 11.8084 6.77502 10.3667 6.77502 8.58337C6.77502 6.80003 8.22502 5.3667 10 5.3667C11.775 5.3667 13.225 6.80837 13.225 8.5917C13.225 10.375 11.775 11.8084 10 11.8084ZM10 6.6167C8.91669 6.6167 8.02502 7.50003 8.02502 8.5917C8.02502 9.68337 8.90836 10.5667 10 10.5667C11.0917 10.5667 11.975 9.68337 11.975 8.5917C11.975 7.50003 11.0834 6.6167 10 6.6167Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M10 18.9667C8.76669 18.9667 7.52502 18.5001 6.55836 17.5751C4.10002 15.2084 1.38336 11.4334 2.40836 6.94175C3.33336 2.86675 6.89169 1.04175 10 1.04175C10 1.04175 10 1.04175 10.0084 1.04175C13.1167 1.04175 16.675 2.86675 17.6 6.95008C18.6167 11.4417 15.9 15.2084 13.4417 17.5751C12.475 18.5001 11.2334 18.9667 10 18.9667ZM10 2.29175C7.57503 2.29175 4.45836 3.58341 3.63336 7.21675C2.73336 11.1417 5.20002 14.5251 7.43336 16.6667C8.87502 18.0584 11.1334 18.0584 12.575 16.6667C14.8 14.5251 17.2667 11.1417 16.3834 7.21675C15.55 3.58341 12.425 2.29175 10 2.29175Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  <span>Sleman, Yogyakarta</span>
+                </p>
+              </div>
+              <div>
+                <p class="opacity-80 max-w-300">
+                  There’s just something about that pulls you in. Maybe it’s the
+                  blend of rustic charm and modern 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          500: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1.8,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
