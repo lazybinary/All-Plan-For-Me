@@ -2,47 +2,63 @@
   .fs-45 {
     font-size: 30px;
   }
+
   .fs-20 {
     font-size: 16px;
   }
+
   .fs-18 {
     font-size: 11px;
   }
+
   .gap-24 {
     gap: 14px;
   }
+
   .fs-16 {
     font-size: 9px;
   }
+
   .fs-14 {
     font-size: 8px;
   }
+
   .p-50-60 {
     padding: 40px 20px !important;
   }
 }
+
 @media (max-width: 640px) {
   .fs-45 {
     font-size: 36px;
+    margin-bottom: 40px;
+
   }
+
   .fs-20 {
     font-size: 18px;
   }
+
   .fs-18 {
     font-size: 14px;
   }
+
   .gap-24 {
     gap: 16px;
   }
+
   .fs-16 {
     font-size: 12px;
   }
+
   .fs-14 {
     font-size: 10px;
   }
+
   .p-50-60 {
     padding: 40px 30px !important;
   }
+
   .swiper-two .navigation-btn-gap,
   .navigation-btn-gap-2 {
     justify-content: center !important;
@@ -50,59 +66,102 @@
     margin-right: 0px;
   }
 }
+
 @media (max-width: 768px) {
   .fs-45 {
     font-size: 42px;
     font-family: "Urbanist", sans-serif;
     font-weight: 700;
+    margin-bottom: 50px;
+
   }
+
   .fs-18 {
     font-size: 16px;
   }
+
   .fs-16 {
     font-size: 14px;
   }
+
   .gap-24 {
     gap: 18px;
   }
+
   .fs-14 {
     font-size: 12px;
   }
+
   .p-50-60 {
     padding: 40px 40px;
   }
+
   .swiper-two .navigation-btn-gap {
     justify-content: start;
     margin-left: 9%;
   }
+
   .navigation-btn-gap-2 {
     justify-content: end;
     margin-right: 9%;
   }
 }
+
 @media (max-width: 1024px) {
   .gap-24 {
     gap: 20px;
   }
+
   .p-50-60 {
     padding: 40px 50px;
   }
+
   .swiper-two .navigation-btn-gap {
     justify-content: start;
     margin-left: 10%;
   }
+
   .navigation-btn-gap-2 {
     justify-content: end;
     margin-right: 10%;
   }
 }
+
 @media (max-width: 1220px) {
   .swiper-two .navigation-btn-gap {
     justify-content: start;
     margin-left: 12%;
   }
+
   .navigation-btn-gap-2 {
     justify-content: end;
     margin-right: 12%;
   }
+}
+
+@media (max-width:500px) {
+  .fs-45 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .fs-28 {
+    font-size: 28px;
+  }
+
+  .slider-three .slide-content a {
+    width: fit-content;
+    text-decoration: none;
+  }
+}
+
+@media (min-width:1200px) {
+  .fs-45 {
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+  }
+
 }
