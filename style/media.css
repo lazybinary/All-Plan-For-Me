@@ -43,9 +43,11 @@
   .p-50-60 {
     padding: 40px 30px !important;
   }
-  .swiper-two .navigation-btn-gap {
+  .swiper-two .navigation-btn-gap,
+  .navigation-btn-gap-2 {
     justify-content: center !important;
     margin-left: 0px !important;
+    margin-right: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -73,6 +75,10 @@
     justify-content: start;
     margin-left: 9%;
   }
+  .navigation-btn-gap-2 {
+    justify-content: end;
+    margin-right: 9%;
+  }
 }
 @media (max-width: 1024px) {
   .gap-24 {
@@ -85,10 +91,18 @@
     justify-content: start;
     margin-left: 10%;
   }
+  .navigation-btn-gap-2 {
+    justify-content: end;
+    margin-right: 10%;
+  }
 }
 @media (max-width: 1220px) {
   .swiper-two .navigation-btn-gap {
     justify-content: start;
     margin-left: 12%;
+  }
+  .navigation-btn-gap-2 {
+    justify-content: end;
+    margin-right: 12%;
   }
 }
