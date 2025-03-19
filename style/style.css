@@ -72,6 +72,10 @@ body {
   font-size: 20px;
 }
 
+.fs-28 {
+  font-size: 28px;
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -120,6 +124,14 @@ body {
   margin: 0px auto;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
 .swiper-two .swiper {
   width: 100%;
   height: 100%;
@@ -143,17 +155,17 @@ body {
 }
 
 .swiper-two .swiper-slide-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.swiper-two .swiper-slide-active {
   background-color: #0677ad;
   color: white;
   opacity: 1;
 }
 
-.swiper-two .swiper-button-next,
-.swiper-button-prev {
-  position: relative !important;
-  color: transparent;
-  width: 42px;
-  height: 42px;
+.swiper-two .button-box svg {
+  scale: 0.7;
 }
 
 .swiper-two .swiper-button-next:after,
@@ -206,12 +218,11 @@ body {
 /* slider-3 */
 .slider-three .swiper-slide {
   position: relative;
-
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: height 0.3s ease;
+  transition: all 0.4s ease-in-out;
   height: 461px;
 }
 
@@ -238,7 +249,6 @@ body {
 
 .slider-three .slide-content {
   display: none;
-
   margin-top: 20px;
   position: absolute;
   bottom: -120px;
@@ -254,18 +264,29 @@ body {
 }
 
 .slider-three .slide-content a {
-  padding: 15px 55px 15px 35px;
+  padding: 12px 30px 7px 30px;
   font-size: 16px;
+  line-height: 100%;
   background-color: #0677ad;
   color: white;
   background-size: cover;
   border: none;
   border-radius: 30px;
   cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
 }
 
+
+
 .slider-three .slide-content a:hover {
-  background-color: #0056b3;
+  border: 1px solid #0677ad;
+  background-color: #0678ad;
 }
 
 /* slider 1 */
@@ -330,7 +351,29 @@ body {
   align-items: center;
 }
 
+.button-box {
+  position: relative !important;
+  color: transparent;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-box:hover {
+  border-color: #0677ad;
+}
+
+.button-box:hover svg path {
+  fill: #0677ad;
+}
+
 .slider-three .swiper-button-prev-2 {
   transform: rotate(180deg);
-  margin-top: -12px !important;
 }
