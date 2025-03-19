@@ -1,24 +1,45 @@
-@media (max-width: 375px) {
-  .fs-45 {
-    font-size: 30px;
+@media (max-width: 1220px) {
+  .swiper-two .navigation-btn-gap {
+    justify-content: start;
+    margin-left: 12%;
   }
-  .fs-20 {
-    font-size: 16px;
-  }
-  .fs-18 {
-    font-size: 11px;
-  }
+}
+@media (max-width: 1024px) {
   .gap-24 {
-    gap: 14px;
-  }
-  .fs-16 {
-    font-size: 9px;
-  }
-  .fs-14 {
-    font-size: 8px;
+    gap: 20px;
   }
   .p-50-60 {
-    padding: 40px 20px !important;
+    padding: 40px 50px;
+  }
+  .swiper-two .navigation-btn-gap {
+    justify-content: start;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .fs-45 {
+    font-size: 42px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .fs-16 {
+    font-size: 14px;
+  }
+  .gap-24 {
+    gap: 18px;
+  }
+  .fs-14 {
+    font-size: 12px;
+  }
+  .p-50-60 {
+    padding: 40px 40px;
+  }
+  .swiper-two .navigation-btn-gap {
+    justify-content: start;
+    margin-left: 9%;
   }
 }
 @media (max-width: 640px) {
@@ -53,47 +74,27 @@
     margin-right: 0px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 375px) {
   .fs-45 {
-    font-size: 42px;
-    font-family: "Urbanist", sans-serif;
-    font-weight: 700;
+    font-size: 30px !important;
   }
-  .fs-18 {
+  .fs-20 {
     font-size: 16px;
   }
-  .fs-16 {
-    font-size: 14px;
+  .fs-18 {
+    font-size: 11px;
   }
   .gap-24 {
-    gap: 18px;
+    gap: 14px;
+  }
+  .fs-16 {
+    font-size: 9px;
   }
   .fs-14 {
-    font-size: 12px;
+    font-size: 8px;
   }
   .p-50-60 {
-    padding: 40px 40px;
-  }
-  .swiper-two .navigation-btn-gap {
-    justify-content: start;
-    margin-left: 9%;
-  }
-}
-@media (max-width: 1024px) {
-  .gap-24 {
-    gap: 20px;
-  }
-  .p-50-60 {
-    padding: 40px 50px;
-  }
-  .swiper-two .navigation-btn-gap {
-    justify-content: start;
-    margin-left: 10%;
-  }
-}
-@media (max-width: 1220px) {
-  .swiper-two .navigation-btn-gap {
-    justify-content: start;
-    margin-left: 12%;
+    padding: 40px 20px !important;
   }
 }
