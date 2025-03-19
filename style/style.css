@@ -184,6 +184,12 @@ body {
   rotate: 180deg;
 }
 
+.swiper-1 .navigation-btn-gap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .swiper-two .navigation-btn-gap {
   gap: 30px;
   margin-left: 13%;
@@ -213,6 +219,10 @@ body {
 
 .max-h-50 {
   max-height: 50px;
+}
+
+.max-w-800 {
+  max-width: 800px;
 }
 
 /* slider-3 */
@@ -304,23 +314,17 @@ body {
   transition: height 0.3s ease;
 }
 
-.slider-one .swiper-slide-active img {
-  height: 478px;
-}
 
-.slider-one .swiper-slide p span {
+
+
+
+
+
+.slider-one .swiper-slide .pos-square {
   display: none;
 }
 
-.slider-one .swiper-slide-active p span {
-  display: flex;
-}
-
-.slider-one .swiper-slide .relative .pos-square {
-  display: none;
-}
-
-.slider-one .swiper-slide-active .relative .pos-square {
+.slider-one .swiper-slide-active .pos-square {
   display: block;
 }
 
@@ -374,6 +378,99 @@ body {
   fill: #0677ad;
 }
 
-.slider-three .swiper-button-prev-2 {
+.slider-three .swiper-button-prev-2,
+.slider-1 .swiper-button-prev-1 {
   transform: rotate(180deg);
+}
+
+/* slider1  */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+
+
+.slider-1 .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out !important;
+  height: 300px;
+}
+
+.box-show-no {
+  height: 70px;
+  width: 100%;
+  transition: all 0.3s ease-in-out !important;
+
+}
+
+.slider-1 .swiper-slide-active img {
+  height: 370px;
+
+}
+
+.slider-1 .swiper-slide-active .box-show-no {
+  height: 0px !important;
+  width: 100%;
+}
+
+
+.slider-1 .swiper-slide .para-show {
+  display: none;
+}
+
+.slider-1 .swiper-slide-active .para-show {
+  display: block;
+  margin-top: 0px;
+}
+
+.slider-1 .swiper-slide-active .para-show p {
+  margin-top: 0px;
+}
+
+.slider-1 .swiper-slide .relative .check-show {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-1 .swiper-slide-active .check-show {
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+
+}
+
+.slider-1 .swiper-slide .relative a {
+  display: none;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.slider-1 .swiper-slide:hover .relative a {
+  display: flex;
+}
+
+.slider-1 .swiper-slide-active .relative a {
+  transition: all ease-in 0.4s;
+}
+
+.slider-1 .pos-relative .swiper-button-prev-1,
+.slider-1 .pos-relative .swiper-button-next-1 {
+  color: rgb(0, 0, 0) !important;
+  border: 1px grey transparent !important;
+  border-radius: 100px;
+  padding: 0px;
+}
+
+.slider-1 .pos-relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
 }
