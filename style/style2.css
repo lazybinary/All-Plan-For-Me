@@ -116,3 +116,6 @@
   right: 0;
   max-width: fit-content;
 }
+.text-black {
+  color: #000;
+}

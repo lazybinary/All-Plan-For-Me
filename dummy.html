@@ -32,7 +32,7 @@
         padding: 0;
       }
 
-      .swiper-slide {
+      .slider-three .swiper-slide {
         position: relative;
 
         background: #fff;
@@ -43,7 +43,7 @@
         height: 461px;
       }
 
-      .swiper-slide img {
+      .slider-three .swiper-slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -51,20 +51,20 @@
         border-radius: 20px;
       }
 
-      .swiper-slide-active {
+      .slider-three .swiper-slide-active {
         height: 240px;
       }
 
-      .swiper-a -next,
+      .slider-three .swiper-a -next,
       .swiper-a -prev {
         z-index: 10;
       }
 
-      .swiper-pagination {
+      .slider-three .swiper-pagination {
         z-index: 10;
       }
 
-      .slide-content {
+      .slider-three .slide-content {
         display: none;
 
         margin-top: 20px;
@@ -74,14 +74,14 @@
         transition: bottom 0.3s ease;
       }
 
-      .swiper-slide-active .slide-content {
+      .slider-three .swiper-slide-active .slide-content {
         display: block;
         position: absolute;
         bottom: -220px;
         left: 0px;
       }
 
-      .slide-content a {
+      .slider-three .slide-content a {
         padding: 15px 55px 15px 35px;
         font-size: 16px;
         background-color: #0677ad;
@@ -92,27 +92,27 @@
         cursor: pointer;
       }
 
-      .slide-content a:hover {
+      .slider-three .slide-content a:hover {
         background-color: #0056b3;
       }
     </style>
   </head>
 
   <body>
-    <div class="my-80">
+    <div class="my-80 slider-three">
       <h1 class="max-w-622 mb-50 fs-45 mx-auto ff-haton text-center">
         Beautifully Designed Plans for Every Home.
       </h1>
 
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper3">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -145,10 +145,10 @@
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome2.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -181,10 +181,10 @@
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome3.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -217,10 +217,10 @@
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -253,10 +253,10 @@
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome2.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -289,10 +289,10 @@
           <div class="swiper-slide">
             <img src="./assestes/png/everyhome3.png" alt="Home Image" />
             <div class="slide-content">
-              <h1 class="fs-28 ff-haton">
+              <h1 class="fs-28 ff-haton text-black text-start">
                 Flexible Designs for Every Lifestyle.
               </h1>
-              <p class="fs-14">
+              <p class="fs-14 text-black text-start">
                 The House Designers offers professional modification services to
                 make changes to home.
               </p>
@@ -335,7 +335,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper3", {
         slidesPerView: 3,
         spaceBetween: 30,
         keyboard: {

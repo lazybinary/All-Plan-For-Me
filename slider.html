@@ -1,5 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: height 0.3s ease;
+    }
+    .swiper-slide-active img {
+      height: 478px;
+    }
+    .swiper-slide p span {
+      display: none;
+    }
+    .swiper-slide-active p span {
+      display: flex;
+    }
+    .swiper-slide .relative .pos-square {
+      display: none;
+    }
+    .swiper-slide-active .relative .pos-square {
+      display: block;
+    }
+    .swiper-slide .relative a {
+      display: none;
+    }
+    .swiper-slide-active:hover .relative a {
+      display: block;
+    }
+    .swiper-slide-active .relative a {
+      transition: all ease-in 0.4s;
+    }
+  </style>
   <head>
     <meta charset="utf-8" />
     <title>Swiper demo</title>
@@ -14,60 +68,6 @@
     />
     <link rel="stylesheet" href="./style/style2.css" />
     <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-        transition: height 0.3s ease;
-      }
-      .swiper-slide-active img {
-        height: 478px;
-      }
-      .swiper-slide p span {
-        display: none;
-      }
-      .swiper-slide-active p span {
-        display: flex;
-      }
-      .swiper-slide .relative .pos-square {
-        display: none;
-      }
-      .swiper-slide-active .relative .pos-square {
-        display: block;
-      }
-      .swiper-slide .relative a {
-        display: none;
-      }
-      .swiper-slide-active:hover .relative a {
-        display: block;
-      }
-      .swiper-slide-active .relative a {
-        transition: all ease-in 0.4s;
-      }
-    </style>
   </head>
 
   <body>

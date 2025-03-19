@@ -91,13 +91,13 @@ body {
 .mx-auto {
   margin: 0px auto;
 }
-.swiper {
+.swiper-two .swiper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
-.swiper-slide {
+.swiper-two .swiper-slide {
   text-align: center;
   font-size: 18px;
   background-color: #f2f2f2;
@@ -111,33 +111,33 @@ body {
   height: 100%;
   margin: 0px;
 }
-.swiper-slide-active {
+.swiper-two .swiper-slide-active {
   background-color: #0677ad;
   color: white;
   opacity: 1;
 }
-.swiper-button-next,
+.swiper-two .swiper-button-next,
 .swiper-button-prev {
   position: relative !important;
   color: transparent;
   width: 42px;
   height: 42px;
 }
-.swiper-button-next:after,
+.swiper-two .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after,
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   display: none;
 }
 
-.navi-arrow {
+.swiper-two .navi-arrow {
   width: 30px !important;
   height: 24px;
 }
-.swiper-button-prev {
+.swiper-two .swiper-button-prev {
   rotate: 180deg;
 }
-.navigation-btn-gap {
+.swiper-two .navigation-btn-gap {
   gap: 30px;
   margin-left: 13%;
 }
@@ -161,3 +161,106 @@ body {
 .max-h-50 {
   max-height: 50px;
 }
+/* slider-3 */
+.slider-three .swiper-slide {
+  position: relative;
+
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease;
+  height: 461px;
+}
+
+.slider-three .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.slider-three .swiper-slide-active {
+  height: 240px;
+}
+
+.slider-three .swiper-a -next,
+.swiper-a -prev {
+  z-index: 10;
+}
+
+.slider-three .swiper-pagination {
+  z-index: 10;
+}
+
+.slider-three .slide-content {
+  display: none;
+
+  margin-top: 20px;
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  transition: bottom 0.3s ease;
+}
+
+.slider-three .swiper-slide-active .slide-content {
+  display: block;
+  position: absolute;
+  bottom: -220px;
+  left: 0px;
+}
+
+.slider-three .slide-content a {
+  padding: 15px 55px 15px 35px;
+  font-size: 16px;
+  background-color: #0677ad;
+  color: white;
+  background-size: cover;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.slider-three .slide-content a:hover {
+  background-color: #0056b3;
+}
+/* slider 1 */
+.slider-one .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-one .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: height 0.3s ease;
+}
+.slider-one .swiper-slide-active img {
+  height: 478px;
+}
+.slider-one .swiper-slide p span {
+  display: none;
+}
+.slider-one .swiper-slide-active p span {
+  display: flex;
+}
+.slider-one .swiper-slide .relative .pos-square {
+  display: none;
+}
+.slider-one .swiper-slide-active .relative .pos-square {
+  display: block;
+}
+.slider-one .swiper-slide .relative a {
+  display: none;
+}
+.slider-one .swiper-slide-active:hover .relative a {
+  display: block;
+}
+.slider-one .swiper-slide-active .relative a {
+  transition: all ease-in 0.4s;
+}
+/* happy */
